@@ -20,16 +20,16 @@ Below you will find the functional requirements provided to you by the business 
 goal is to modify the provided Laravel 12 and React Native app to meet the functional spec and resolve any bugs you might find
 along the way.
 
-Your lead dev has reviewed the work and allotted you 3 billable hours to complete this assignment.
+Your lead dev has reviewed the work and allotted you 2 billable hours to complete this assignment.
 
 *UPDATE*: Your project manager sends you a list of some of the specific bugs the client has reported.
 
-- The client reports the load time for the property list is too slow (You're lead dev recommends you add caching as the API is slow)
-- The client reports that the search does not autocomplete from Geoapify
-- The client reports that when they search for a city or address the search results are not within 20 miles of the search address
-- The client reports when adding a property to their wishlist then switching to the wishlist and back to the search and searching for the same property again the property is not marked as wishlisted
-- The client reported that the distance from the searched address that should display on the property card is not displaying properly
-- The client reported that the wishlist search does not work properly
+- The load time for the property list is too slow (Your lead dev recommends that you add caching as the API is slow)
+- The search is just a text input. Please switch it to use [Geoapify Autocomplete](https://www.npmjs.com/package/@geoapify/geocoder-autocomplete)
+- The search results are not within 20 miles of the search address
+- The wishlist functionality is not persisting between page changes
+- The distance indicator on the property card is always displaying 0 miles when it should show the distance in miles from the searched address to the property address
+- The wishlist search does not work properly
 
 ## Functional Requirements
 
@@ -126,7 +126,7 @@ This service will be utilized for address autocomplete. Use the following steps 
 
 ### Datafiniti
 
-This service will be utilized for pulling property data. In order to complete this project you will need to read through the [API Documentation](https://developer.datafiniti.co/reference/products) and [Guides](https://developer.datafiniti.co/docs/constructing-property-queries#geo-queries) (HINT:
+This service will be utilized for pulling property data. In order to complete this project you will need to read through the [API Documentation](https://docs.datafiniti.co/reference/properties) and [Guides](https://docs.datafiniti.co/docs/constructing-property-queries#geo-queries) (HINT:
 You'll need to read both linked documentation to complete the test) to complete the functional requirements define in [API Functional Requirements](#api-functional-requirements)
 
 ##### Signing up
