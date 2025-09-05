@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://appliedimagination.com/" target="_blank">
-        <img src="https://images.appliedimagination.com/common/ai-logo-color-light.png" width="400" alt="Laravel Logo">
+        <img src="https://images.appliedimagination.com/common/ai-logo-color-dark.png" width="400" alt="Laravel Logo">
     </a>
 </p>
 
