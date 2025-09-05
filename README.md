@@ -36,7 +36,8 @@ Your lead dev has reviewed the work and allotted you 2 billable hours to complet
 Modify the provided Laravel 12 and React Native app to fix the client issues
 
 - The provided exercise files are a starting point, and they have room for improvement; feel free to modify
-- This is a test to determine your code quality and ability to implement client requests. We won't be counting pixels but are looking for a general nice UI
+- This is a test to determine your code quality and ability to implement client requests.
+  - We won't be counting pixels but are looking for a general nice UI
 - In the exercise you are implementing a local API; however, you should code your submission as if you are using a production API
 
 ### Frontend Functional Requirements
