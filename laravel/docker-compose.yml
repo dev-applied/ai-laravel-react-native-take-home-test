@@ -1,0 +1,22 @@
+services:
+
+    webserver:
+        image: thecodingmachine/php:8.4-v4-apache
+        volumes:
+            - ./:/var/www/html/:delegated
+            - ~/.composer/docker-cache/:/root/.composer:cached
+        environment:
+            XDEBUG_CONFIG: remote_host=host.docker.internal
+            PHP_EXTENSION_XDEBUG: 1
+            PHP_EXTENSION_MYSQLI: 1
+            PHP_INI_MEMORY_LIMIT: 4g
+            PHP_EXTENSION_GD: 1
+            APACHE_DOCUMENT_ROOT: public/
+            PHP_EXTENSION_BZ2: 1
+            PHP_EXTENSION_IMAGICK: 1
+            PHP_INI_UPLOAD_MAX_FILESIZE: 1g
+            PHP_INI_XDEBUG__REMOTE_START: 1
+            PHP_INI_XDEBUG__START_WITH_REQUEST: 'yes'
+            STARTUP_COMMAND_1: composer install
+        ports:
+            - "85:80"
